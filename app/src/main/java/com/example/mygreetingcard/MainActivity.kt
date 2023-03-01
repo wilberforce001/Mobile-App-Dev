@@ -34,10 +34,10 @@ fun Greeting(name: String) {
     Text(text = "Hi, my name is $name!")
 }
 
-@Preview(showBackground = false)
+@Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     MyGreetingCardTheme {
-        Greeting("Android")
+        Greeting("Kipyegon Wilberforce")
     }
 }
