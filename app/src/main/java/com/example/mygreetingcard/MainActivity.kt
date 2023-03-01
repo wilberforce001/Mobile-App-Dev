@@ -13,6 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mygreetingcard.ui.theme.MyGreetingCardTheme
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.padding
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,8 +36,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     Surface(color = androidx.compose.ui.graphics.Color.Green) {
-        Text(text = "Hi, my name is $name!")
-    }
+        Text(text = "Hi, my name is $name!", modifier = Modifier.padding(24.dp))
+
     }
 
 @Preview(showBackground = true)
